@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import Button from './index'
+import Button from './index.vue'
 
 export default {
     install(app: App) {
