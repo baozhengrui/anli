@@ -1,0 +1,47 @@
+//整体布局
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.sub-page{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+//screen 响应式 < 1240px;
+
+//@规则嵌套和冒泡
+
+@media screen and(max-width: 1240px) {
+    .app-container{
+        max-width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.flex {
+    display: flex; //将对象作为弹性伸缩盒显示
+    &.top{    //& 表示当前选择器的父级
+        align-items: flex-start;
+    }
+    &.bottom {
+        align-items: flex-end;
+    }
+    &.middle {
+        align-items: center;
+    }
+    &.center {
+        justify-content: center;
+    }
+    &.end {
+        justify-content: flex-end;
+    }
+    &.between {
+        justify-content: space-between;
+    }
+}
+
