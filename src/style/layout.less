@@ -26,22 +26,22 @@
 .flex {
     display: flex; //将对象作为弹性伸缩盒显示
     &.top{    //& 表示当前选择器的父级
-        align-items: flex-start;
+        align-items: flex-start;  //元素位于容器的开头
     }
     &.bottom {
-        align-items: flex-end;
+        align-items: flex-end; //元素位于容器的结尾
     }
     &.middle {
-        align-items: center;
+        align-items: center;   //元素位于容器的中间
     }
     &.center {
-        justify-content: center;
+        justify-content: center;     //剧中排列
     }
     &.end {
-        justify-content: flex-end;
+        justify-content: flex-end;    //从行尾位置开始排列
     }
     &.between {
-        justify-content: space-between;
+        justify-content: space-between;  //均匀排放每个元素，首个元素放置起点，末尾元素放置终点
     }
 }
 
